@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>RELATIVATE RECOMMENDATIONS</title>
+    <title>Share A Ride</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -22,7 +22,9 @@
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 	
 	<!--script src="assets/js/jquery-1.8.3.min.js"></script-->
-	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="assets/js/jquery-1.8.3.min.js"></script>
+		<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
 	
 	
     <script src="assets/js/chart-master/Chart.js"></script>
@@ -139,7 +141,7 @@
                                     <span class="time">Just now</span>
                                     </span>
                                     <span class="message">
-                                        Hi mate, how is everything?
+                                        Riding to Lake, Wanna join?
                                     </span>
                                 </a>
                             </li>
@@ -151,7 +153,7 @@
                                     <span class="time">40 mins.</span>
                                     </span>
                                     <span class="message">
-                                     Hi, I need your help with this.
+                                     Hi, I need a ride for airport.
                                     </span>
                                 </a>
                             </li>
@@ -163,7 +165,7 @@
                                     <span class="time">2 hrs.</span>
                                     </span>
                                     <span class="message">
-                                        Love your new Dashboard.
+                                        Thanks for the ride.
                                     </span>
                                 </a>
                             </li>
@@ -203,8 +205,8 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Urvil Shah</h5>
+              	  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">User Name</h5>
               	  	
                   <li class="mt">
                       <a class="active" href="#" id="dashboard_link">
@@ -216,14 +218,14 @@
                   <li class="sub-menu">
                       <a href="#">
                           <i class="fa fa-desktop"></i>
-                          <span>Option2</span>
+                          <span>Profile</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
                       <a href="#">
                           <i class="fa fa-cogs"></i>
-                          <span>Option3</span>
+                          <span>Settings</span>
                       </a>
                       <!--ul class="sub">
                           <li><a  href="calendar.html">Calendar</a></li>
@@ -234,7 +236,7 @@
                   <li class="sub-menu">
                       <a href="#">
                           <i class="fa fa-book"></i>
-                          <span>Option4</span>
+                          <span>Ride History</span>
                       </a>
                       <!--ul class="sub">
                           <li><a  href="blank.html">Blank Page</a></li>
@@ -245,10 +247,22 @@
                   <li class="sub-menu">
                       <a href="#">
                           <i class="fa fa-tasks"></i>
-                          <span>Option5</span>
+                          <span>Payment</span>
                       </a>
                   </li>
-                  </ul>
+                  
+				   <li class="sub-menu">
+                      <a href="#">
+                          <i class="fa fa-book"></i>
+                          <span>Create a Ride</span>
+                      </a>
+                      <!--ul class="sub">
+                          <li><a  href="blank.html">Blank Page</a></li>
+                          <li><a  href="login.html">Login</a></li>
+                          <li><a  href="lock_screen.html">Lock Screen</a></li>
+                      </ul-->
+                  </li>
+				</ul>
             </div>
       </aside>
       <section id="main-content">
@@ -256,7 +270,16 @@
 
               <div class="row">
                   <div class="col-lg-9 main-chart" id="dashboard_page">
-                  
+					<table class="form_table">
+			<tr>
+				<td><h3>Where? : </h3></td>
+				<td><input class="fnum" name="fno" id="fno" type="text" value="" /></td>
+				<td><h3>When? : </h3></td>
+				<td><input name="datepicker" type="text" id="datepicker"></td>
+				<td><input class="fire" id="fire2" type="submit"/></td>
+			</tr>
+		</table>
+		<script>$("#datepicker").datepicker({});</script>
                   </div><!-- /row mt -->	
                   
                    
@@ -275,7 +298,7 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>2 Minutes Ago</muted><br/>
-                      		   <a href="#">James Brown</a> subscribed to your newsletter.<br/>
+                      		   <a href="#">James Brown</a> subscribed to your trips.<br/>
                       		</p>
                       	</div>
                       </div>
@@ -286,7 +309,7 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>3 Hours Ago</muted><br/>
-                      		   <a href="#">Diana Kennedy</a> purchased a year subscription.<br/>
+                      		   <a href="#">Diana Kennedy</a> looking to share a ride .<br/>
                       		</p>
                       	</div>
                       </div>
@@ -319,7 +342,7 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>18 Hours Ago</muted><br/>
-                      		   <a href="#">Daniel Pratt</a> purchased a wallet in your store.<br/>
+                      		   <a href="#">Daniel Pratt</a> 6 Flags on 23rd May<br/>
                       		</p>
                       	</div>
                       </div>
@@ -423,7 +446,7 @@
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
     <script src="assets/js/jquery.sparkline.js"></script>
-	<script src="assets/js/developer.js"></script>
+	<!--script src="assets/js/developer.js"></script-->
 
 
     <!--common script for all pages-->

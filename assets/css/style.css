@@ -2239,3 +2239,11 @@ label {
 .site-min-height {
     min-height: 900px;
 }
+
+.form_table {
+  margin-top: 20px;
+    margin-left: 60px;
+  width: 90%;
+  float: none;
+  font-size: 20px;
+}

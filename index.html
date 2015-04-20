@@ -51,13 +51,32 @@
 		            
 		            <div class="login-social-link centered">
 		            <p>or you can sign in via your social network</p>
-		                <div class="btn btn-facebook"  onclick="goOn()"><i class="fa fa-facebook"></i> Facebook</div>
+						<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+
+		                <!--div class="btn btn-facebook"  onclick="goOn()"><i class="fa fa-facebook"></i> Facebook</div>
 						<script>
 							function goOn()
 							{
-								window.location.href = "main.html";
+								window.location.href = "login.html";
+								/*
+							  window.fbAsyncInit = function() {
+								FB.init({
+								  appId      : '653021314842610',
+								  xfbml      : true,
+								  version    : 'v2.3'
+								});
+							  };
+
+							  (function(d, s, id){
+								 var js, fjs = d.getElementsByTagName(s)[0];
+								 if (d.getElementById(id)) {return;}
+								 js = d.createElement(s); js.id = id;
+								 js.src = "//connect.facebook.net/en_US/sdk.js";
+								 fjs.parentNode.insertBefore(js, fjs);
+							   }(document, 'script', 'facebook-jssdk'));
+							   */
 							}
-						</script>
+						</script-->
 		                <!--button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button-->
 		            </div>
 		            <div class="registration">
@@ -99,7 +118,8 @@
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+	<script src="assets/js/developer.js"></script>
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
